@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    width: 100%;
+    position: sticky !important;
+    left: 0;
+    top: 0;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, .5);
+    z-index: 10;
+    animation: nav 1s ease-in-out;
+}
+
+@keyframes nav {
+    0%{
+        transform: translateY(-100%);
+    }
+    
+}
+
+.navbar-brand{
+    font-weight: 600;
+}
+
+.navbar-brand .name{
+    color: blue;
+}
+
+body{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    background-size: cover;
+}
+
+#content{
+    margin-top: 5%;
+    color: white;
+    animation: content 1s ease-in-out;    
+}
+
+@keyframes content {
+    0%{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+}
+
+#content .name{
+    color: blue;
+}
+
+#content button{
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    font-weight: 500;
+    font-size: 20px;
+    background-color:blue;
+    box-shadow: 0 0 2px rgb(0, 132, 255);
+}
+
+#content button:hover{
+    box-shadow: 0 0 10px rgb(0, 132, 255);
+    background: transparent;
+    border: 1px solid rgb(0, 132, 255) ;
+    border-radius: 2px;
+    font-weight: 500;
+}
+
+#content .socialmedia a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-radius: 50%;
+    border: 2px solid blue;
+    font-size: 20px;
+    color: blue;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+
+#content .socialmedia a:hover{
+    background-color: blue;
+    color:white;
+    box-shadow: 0 0 15px rgb(0, 132, 255);
+}
+
+#profile img{
+    margin-top: 10%;
+    position: relative;
+    width: 20rem;
+    border-radius: 50%;
+    background: rgba(6, 76, 142, 0.326);
+    border: .2rem solid blue;
+    transition: 1s;
+    animation: img 1s ease-in-out;
+}
+
+@keyframes img {
+    0%{
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    
+}
+
+#profile img:hover{
+    box-shadow: 0 0 15px blue;
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+/* Skill Section */
+
+#skills{
+    padding-top: 30px;
+    background: #e5e5e5;
+    padding-bottom: 5%;
+}
+
+#skills .container{
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+label{
+    font-size: 20px;
+
+}
+.progress{
+    height: 30px !important;
+    box-shadow: 2px 4px 5px gray, -2px -2px 5px white;
+}
+.progress:hover{
+    box-shadow: 2px 4px 5px white, -2px -2px 5px gray;
+}
+
+/* Education Section */
+
+#educations{
+    padding-top: 80px;    
+    background:black;
+}
+
+#details img{
+    box-shadow: 0 0 5px rgb(134, 112, 234), 0 0 10px rgb(19, 25, 195);
+    width: 70%; 
+    transition: 1s;  
+}
+#details img:hover{
+    transform: scale(1.05);
+    transition: 1s;
+}
+#details h4{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 25px;
+}
+#educations span{
+    font-weight: bold; 
+    color: blue ;
+}
+
+/* Project Section */
+
+#projects{
+    padding-top: 20px;
+    font-weight: bold;
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+
+#Project img{
+    width: auto;
+    height: 500px;
+    box-shadow: 0 0 5px rgb(134, 112, 234), 0 0 10px rgb(19, 25, 195);
+    transition: 1s;
+}
+
+#Project img:hover{
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+
+/* Contact Section */
+
+#contact{
+    padding-top: 20px;
+    font-weight: bold;
+    background: black;
+}
+
+#contact .details{
+    padding: 5%;
+    padding-top: 70px;
+    font-size: 25px;
+    color: white;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn{
+    margin-top: 20px;
+    background: blue;
+    border: blue;
+    color: white;
+    cursor: pointer;
+}
+form .btn:hover{
+    box-shadow: 0 0 10px rgb(0, 132, 255);
+    background: black;
+    color: white;
+    border: 1px solid rgb(0, 132, 255) ;
+    border-radius: 2px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#msg{
+    color: #61b752;
+    display: block;
+}
+
+.media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-radius: 50%;
+    border: 2px solid blue;
+    font-size: 20px;
+    color: blue;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+
+.media a:hover{
+    background-color: blue;
+    color:white;
+    box-shadow: 0 0 15px rgb(0, 132, 255);
+}
+
+
+/* Media Query */
+
+@media screen  and (max-width: 767px){
+    #content h2{
+        color: rgb(255, 255, 255);
+        font-size: 16px !important;
+    }
+
+    #profile img{
+        width: 16rem;
+        margin-bottom: 2rem;
+    }
+    #content button{
+        font-size: 13px;
+        margin-bottom: 2rem !important;
+    }
+    #content p{
+        font-size: 13px !important;
+    }
+
+    #contact .details{
+        font-size: 15px;
+    }
+
+}
+@media screen and (min-width:768px)and (max-width:1023px){
+    section{
+        width: 100%;
+        min-height: 50vh;
+    }
+
+    #content h2{
+        color: rgb(255, 255, 255);
+        font-size: 16px !important;
+    }
+
+    #content button{
+        font-size: 13px;
+        margin-bottom: 2rem !important;
+    }
+    #content p{
+        font-size: 13px !important;
+    }
+
+
+    #profile img{
+        width: 15rem;
+    }
+}
+@media screen  and (min-width: 1440px){
+    
+    #content h2{
+        color: rgb(255, 255, 255);
+        font-size: 30px !important;
+    }
+
+    #profile img{
+        width: 20rem;
+    }
+    #content button{
+        font-size: 20px;
+    }
+    #content p{
+        font-size: 20px !important;
+    }
+    section{
+        width: 100%;
+        min-height: 80vh;
+    }
+
+}
